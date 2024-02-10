@@ -10,6 +10,12 @@
 }
 
 body {
+    background-color: #2a2823;
+}
+
+/* HOME PAGE*/
+
+.index-page {
     background: url('./images/index_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,4 +77,63 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+}
+
+/* PROJECTS PAGE*/
+
+#coding-proj {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#coding-proj h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#github-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #404040;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#website-proj {
+    background-image: url('./images/project_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.website-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#website-proj h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#website-proj img {
+    height: 300px;
+    width: auto;
 }
