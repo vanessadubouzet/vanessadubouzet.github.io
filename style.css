@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "JacquesFrancois";
+    src: url(./JacquesFrancois-Regular.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:"JacquesFrancois";
+}
+
+body {
+    background: url('./images/index_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .header {
@@ -9,140 +22,53 @@
     width: 100%;
     padding: 30px 0px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     z-index: 100;
-}
-
-.header h1 {
-    margin-left: 40px;
 }
 
 .navbar a {
     font-size: 18px;
-    color: #000;
+    color: #FFF;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 40px;
 }
 
-.banner {
-    display: flex;
-    background-color: #ecf8ff;
-    height: 300px;
+#home {
+    margin-top: 130px;
+}
+
+#home h1 {
+    color: #fff;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#home p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.home-button {
+    text-align: center;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
-.myCartoonImage {
-    flex:50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#memoji {
-    height: 320px;
-    width: 320px;
-}
-
-.description {
-    flex:50%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-#btn-download {
-    background-color: #fff;
+#dl-resume {
+    display: inline-block;
+    background-color: #404040;
     border-radius: 10px;
-    color: #000;
+    color: #fff;
     padding: 15px 32px;
-    margin-top: 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    font-weight: 900;
-}
-
-#about {
-    display: flex;
-    background-color: #fff;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-contents {
-    background-color: #eee;
-    width: 65%;
-    border-radius: 10px;
-    text-align: center;
-    padding:20px;
-}
-
-.about-contents h1 {
-    margin-bottom: 25px;
-    font-size: 40px;
-}
-
-.about-contents img {
-    margin: 20px 5px 0px;
-    max-width: 30px;
-    max-height: 30px;
-}
-
-.about-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#projects {
-    display: flex;
-    background-color: #ecf8ff;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-contents {
-    width: 65%;
-    border-radius: 10px;
-    text-align: center;
-    padding:20px;
-}
-
-.project-contents h1 {
-    margin-bottom: 25px;
-    font-size: 40px;
-}
-
-.project-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-links a {
-    background-color: #fff;
-    border-radius: 10px;
-    color: #000;
-    padding: 15px 32px;
-    margin: 20px 10px 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 900;
-}
-
-#contact {
-    display: flex;
-    background-color: #eee;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
 }
