@@ -12,7 +12,7 @@
     <header class="header">
         <h1> VD </h1>
         <nav class="navbar">
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -48,13 +48,26 @@
             <div class="project-contents">
                 <h1> Projects </h1>
                 <p> Recents personal projects that I've worked on </p> <br /> 
-                <div class="about-links">
+                <div class="project-links">
                     <a href="https://github.com/vanessadubouzet?tab=repositories" target="_blank"> Coding Projects </a>
-                    <a href=""> </a>
+                    <a href="./web_design_projects.html"> Web Design Projects </a>
                 </div>
             </div>
         </div>
-        <div id="contact"></div>
+        <div id="contact">
+            <div class="project-contents">
+                <h1> Contact Me! </h1>
+                <form action="">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Name"><br>
+                    <label for="lname">*Email address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                    <label for="message">*Message:</label><br>
+                    <input type="text" id="message" name="message" placeholder="Message" required><br><br>
+                    <input type="submit" id="btn-submit"value="Send Message">
+                </form> 
+            </div>
+        </div>
     </section>
     <footer>
 

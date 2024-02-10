@@ -119,3 +119,30 @@
     margin-bottom: 25px;
     font-size: 40px;
 }
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-links a {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    padding: 15px 32px;
+    margin: 20px 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#contact {
+    display: flex;
+    background-color: #eee;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
