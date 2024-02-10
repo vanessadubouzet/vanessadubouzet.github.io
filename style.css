@@ -115,7 +115,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    
+    padding: 70px; 
 }
 
 .website-content {
@@ -123,6 +123,22 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 40px 100px 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col-1 {
+    margin: 0px 10px;
+}
+
+.col-2 {
+    margin: 0px 10px;
 }
 
 #website-proj h1 {
@@ -131,6 +147,16 @@ body {
     text-align: center;
     font-weight: 100;
     margin-bottom: 10px;
+}
+
+#website-proj p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+#website-proj hr {
+    margin-top: 20px;
 }
 
 #website-proj img {
