@@ -1,50 +1,60 @@
 @font-face {
-    font-family: "JacquesFrancois";
-    src: url(./JacquesFrancois-Regular.ttf);
+    font-family: "Jost";
+    src: url(./Jost-VariableFont.ttf);
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-family:"JacquesFrancois";
+    font-family:"Jost";
 }
 
 body {
-    background-color: #2a2823;
+    background-color: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #CDB890;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #404040;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 /* HOME PAGE*/
-
-.index-page {
-    background: url('./images/index_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
 .header {
-    top: 0;
-    width: 100%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     padding: 30px 0px;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: 100;
+    background: url('./images/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar a {
     font-size: 18px;
-    color: #FFF;
-    font-weight: 500;
+    color: #CDB890;
     text-decoration: none;
     text-transform: uppercase;
     margin: 40px;
 }
 
 #home {
-    margin-top: 130px;
+    margin-top: 150px;
 }
 
 #home h1 {
@@ -56,176 +66,84 @@ body {
 }
 
 #home p {
-    color: #fff;
+    color: #CDB890;
     font-size: 20px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
-.home-button {
-    text-align: center;
+#home a img {
+    width: 40px;
+    height: 40px;
+}
+
+#about {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#about #col1{
+    background-color: #CDB890;
+    width: 30%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
-#dl-resume {
-    display: inline-block;
-    background-color: #404040;
-    border-radius: 10px;
-    color: #fff;
-    padding: 15px 32px;
+#about #col1 img{
+    background-color: #CDB890;
+    width: 300px;
+    height: 425px;
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+}
+
+#about #col2 {
+    background-color: #fff;
+    width: 70%;
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
 }
 
-/* PROJECTS PAGE*/
+#about #col2 h2 {
+    margin-top: 150px;
+}
 
-#coding-proj {
-    display: flex;
+#about #col2 p {
+    padding: 0px 100px;
+}
+
+#projects {
+    height: 100vh;
+    width: 100vw;
+}
+
+#projects #row1{
+    text-align: center;
+}
+
+#projects #row1 h2{
+    margin-top: 50px;
+}
+
+#projects #row2{
+    background-color: #CDB890;
+    padding: 40px;
+    margin: 80px;
+}
+
+#projects #row2 img{
     height: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 450px;
 }
-
-#coding-proj h1 {
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 100;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#github-btn {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #404040;
-    border-radius: 10px;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-#website-proj {
-    background-image: url('./images/project_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 70px; 
-}
-
-.website-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 40px 100px 0px;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.col-1 {
-    margin: 0px 10px;
-}
-
-.col-2 {
-    margin: 0px 10px;
-}
-
-#website-proj h1 {
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 100;
-    margin-bottom: 10px;
-}
-
-#website-proj p {
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-}
-
-#website-proj hr {
-    margin-top: 20px;
-}
-
-#website-proj img {
-    height: 300px;
-    width: auto;
-}
-
-/* CONTACT PAGE*/
 
 #contact {
-    margin-top: 130px;
-}
-
-#contact h1 {
-    color: #fff;
-    font-size: 90px;
-    text-align: center;
-    font-weight: 100;
-    margin-bottom: 10px;
-}
-
-#contact p {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 100;
-}
-
-.send-button {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-#btn-email{
-    display: inline-block;
-    background-color: #404040;
-    border-radius: 10px;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-#consultanters-btn {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #404040;
-    border-radius: 10px;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-#carnation-btn {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #404040;
-    border-radius: 10px;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    background: url('./images/contact_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
