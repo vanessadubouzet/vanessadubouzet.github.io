@@ -6,7 +6,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:"Jost";
+    font-family: "Jost";
 }
 
 body {
@@ -22,12 +22,21 @@ h2 {
     font-size: 50px;
     font-weight: 300;
     margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #404040;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 p {
     color: #404040;
     font-size: 20px;
     font-weight: 200;
+    margin-bottom: 10px;
 }
 
 /* HOME PAGE*/
@@ -79,13 +88,15 @@ p {
     height: 40px;
 }
 
+/* About Section */
+
 #about {
     height: 100vh;
     width: 100vw;
     display: flex;
 }
 
-#about #col1{
+#about #col1 {
     background-color: #CDB890;
     width: 30%;
     display: flex;
@@ -93,7 +104,7 @@ p {
     align-items: center;
 }
 
-#about #col1 img{
+#about #col1 img {
     background-color: #CDB890;
     width: 300px;
     height: 425px;
@@ -116,29 +127,74 @@ p {
     padding: 0px 100px;
 }
 
+/* Project Section */
+
 #projects {
     height: 100vh;
     width: 100vw;
 }
 
-#projects #row1{
+#projects #row1 {
     text-align: center;
 }
 
-#projects #row1 h2{
+#projects #row1 h2 {
     margin-top: 50px;
 }
 
-#projects #row2{
+#projects #row2 {
     background-color: #CDB890;
     padding: 40px;
     margin: 80px;
+    display: flex;
 }
 
-#projects #row2 img{
+#projects #row2 #col2{
+    margin: 20px;
+    padding: 10px;
+}
+
+#projects #row2 img {
     height: 300px;
     width: 450px;
 }
+
+#projects #row2 a {
+    height: 30px;
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects #row2 #demo {
+    background-color: #fff;
+    color:#404040;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#projects #row2 span{
+    margin-right: 10px;
+}
+
+#projects #row2 #code {
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#projects #row2 a img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Contact Section */
 
 #contact {
     height: 100vh;
@@ -146,4 +202,34 @@ p {
     background: url('./images/contact_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 30px;
+}
+
+#contact #row1 {
+    text-align: center;
+}
+
+#contact #row1 input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+#contact #row1 input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#contact #row1 input[type=submit]:hover {
+    background-color: #45a049;
 }
