@@ -13,6 +13,11 @@ body {
     background-color: #FFF;
 }
 
+footer {
+    text-align: center;
+    margin: 10px;
+}
+
 a {
     text-decoration: none;
 }
@@ -124,7 +129,20 @@ p {
 }
 
 #about #col2 p {
-    padding: 0px 100px;
+    padding: 0px 150px;
+    margin-bottom: 30px;
+}
+
+#about a {
+    background-color: #CDB890;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    width: 150px;
+    padding: 13px;
 }
 
 /* Project Section */
@@ -149,7 +167,7 @@ p {
     display: flex;
 }
 
-#projects #row2 #col2{
+#projects #row2 #col2 {
     margin: 20px;
     padding: 10px;
 }
@@ -169,24 +187,28 @@ p {
 
 #projects #row2 #demo {
     background-color: #fff;
-    color:#404040;
+    color: #404040;
     text-align: center;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
-#projects #row2 span{
+#projects #row2 span {
     margin-right: 10px;
 }
 
 #projects #row2 #code {
     background-color: #000;
-    color:#fff;
+    color: #fff;
     text-align: center;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
 #projects #row2 a img {
@@ -195,6 +217,7 @@ p {
 }
 
 /* Contact Section */
+
 
 #contact {
     height: 100vh;
@@ -205,31 +228,40 @@ p {
     padding-top: 30px;
 }
 
-#contact #row1 {
+#contact h2 {
+    margin-top: 100px;
+}
+
+#contact #row1,
+form {
     text-align: center;
 }
 
-#contact #row1 input[type=text], select {
-    width: 100%;
+#contact input,
+select {
+    color: #404040;
+    width: 35%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-#contact #row1 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
+}
+
+#contact input[id=message],
+select {
+    height: 150px;
+}
+
+#contact input[type=submit] {
+    width: 20%;
+    background-color: #fff;
+    color: #404040;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-  
-#contact #row1 input[type=submit]:hover {
-    background-color: #45a049;
-}
+
+
