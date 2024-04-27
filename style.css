@@ -106,6 +106,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #CDB890;
 }
 
 #about .col1 img {
