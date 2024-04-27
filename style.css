@@ -101,16 +101,14 @@ p {
     display: flex;
 }
 
-#about #col1 {
-    background-color: #CDB890;
+#about .col1 {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#about #col1 img {
-    background-color: #CDB890;
+#about .col1 img {
     width: 300px;
     height: 425px;
     position: absolute;
@@ -118,17 +116,17 @@ p {
     z-index: 1;
 }
 
-#about #col2 {
+#about .col2 {
     background-color: #fff;
     width: 70%;
     text-align: center;
 }
 
-#about #col2 h2 {
+#about .col2 h2 {
     margin-top: 150px;
 }
 
-#about #col2 p {
+#about .col2 p {
     padding: 0px 150px;
     margin-bottom: 30px;
 }
@@ -152,32 +150,32 @@ p {
     width: 100vw;
 }
 
-#projects #row1 {
+#projects .row1 {
     text-align: center;
 }
 
-#projects #row1 h2 {
+#projects .row1 h2 {
     margin-top: 50px;
 }
 
-#projects #row2 {
+#projects .row2 {
     background-color: #CDB890;
     padding: 40px;
     margin: 80px;
     display: flex;
 }
 
-#projects #row2 #col2 {
+#projects .row2 .col2 {
     margin: 20px;
     padding: 10px;
 }
 
-#projects #row2 img {
+#projects .row2 img {
     height: 300px;
     width: 450px;
 }
 
-#projects #row2 a {
+#projects .row2 a {
     height: 30px;
     width: 150px;
     padding: 10px;
@@ -185,7 +183,7 @@ p {
     justify-content: center;
 }
 
-#projects #row2 #demo {
+#projects .row2 #demo {
     background-color: #fff;
     color: #404040;
     text-align: center;
@@ -196,11 +194,11 @@ p {
     border-radius: 4px;
 }
 
-#projects #row2 span {
+#projects .row2 span {
     margin-right: 10px;
 }
 
-#projects #row2 #code {
+#projects .row2 #code {
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -211,7 +209,7 @@ p {
     border-radius: 4px;
 }
 
-#projects #row2 a img {
+#projects .row2 a img {
     height: 20px;
     width: 20px;
 }
@@ -232,7 +230,7 @@ p {
     margin-top: 100px;
 }
 
-#contact #row1,
+#contact .row1,
 form {
     text-align: center;
 }
@@ -264,4 +262,232 @@ select {
     cursor: pointer;
 }
 
+@media (max-width: 700px) {
+    .header {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        padding: 30px 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: url('./images/header.png');
+        background-repeat: no-repeat;
+    }
 
+    .navbar a {
+        font-size: 10px;
+        color: #CDB890;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 40px;
+    }
+
+    #home {
+        margin-top: 150px;
+    }
+
+    #home h1 {
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+
+    #home p {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    #home a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* About Section */
+    #about {
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about .col1 {
+        margin-top: 180px;
+        order: 1;
+    }
+
+    #about .col1 img {
+        width: 200px;
+        height: 290px;
+        position: absolute;
+        left: 90px;
+    }
+
+    #about .col2 {
+        background-color: #fff;
+        text-align: center;
+        order: 2;
+    }
+
+    #about .col2 h2 {
+        font-size: 25px;
+    }
+
+    #about .col2 p {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #about a {
+        background-color: #CDB890;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        height: 30px;
+        width: 150px;
+        padding: 13px;
+    }
+
+    /* Project Section */
+
+    #projects {
+        height: 800px;
+        position: relative;
+    }
+
+    #projects .row1 {
+        text-align: center;
+    }
+
+    #projects .row1 h2 {
+        margin-top: 25px;
+        font-size: 25px;
+    }
+
+    #projects .row1  p {
+        font-size: 15px;
+        margin: 20px;
+        padding: 0;
+    }
+
+    #projects .row2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 10px;
+        align-items: center;
+    }
+
+    #projects .row2 h3 {
+        font-size: 20px;
+    }
+
+    #projects .row2 p {
+        font-size: 15px;
+    }
+
+    #projects .row2 img {
+        height: 150px;
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    #projects .row2 a {
+        height: 30px;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #projects .row2 #demo {
+        background-color: #fff;
+        color: #404040;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #projects .row2 span {
+        margin-right: 10px;
+    }
+
+    #projects .row2 #code {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #projects .row2 a img {
+        height: 20px;
+        width: 20px;
+        margin-top: 0;
+    }
+
+    /* Contact Section */
+
+
+    #contact {
+        height: 100vh;
+        width: 100vw;
+        background: url('./images/contact_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 30px;
+    }
+
+    #contact h2 {
+        margin-top: 25px;
+        font-size: 25px;
+    }
+
+    #contact .row1,
+    form {
+        text-align: center;
+    }
+
+    #contact input,
+    select {
+        color: #404040;
+        width: 70%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    #contact input[id=message],
+    select {
+        height: 150px;
+    }
+
+    #contact input[type=submit] {
+        width: 40%;
+        background-color: #fff;
+        color: #404040;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+}
