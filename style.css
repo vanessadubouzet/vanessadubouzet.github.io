@@ -80,7 +80,7 @@ h1 {
 }
 
 .circle:hover .button-wrapper {
-    transform: rotate(0deg); /* Rotate text to 0 degrees on hover */
+    transform: rotate(0deg);
 }
 
 .button-wrapper {
@@ -89,13 +89,12 @@ h1 {
     justify-content: center;
     height: 100%;
     width: 100%;
-    transform: rotate(-20deg); /* Counter-rotate the content inside */
+    transform: rotate(-20deg); 
     transition: all 0.3s ease;
 }
 
 .button-wrapper a {
-    color: #5F5F5F; /* Inherit color */
-    text-decoration: none; /* Remove underline */
+    color: #5F5F5F; 
     display: inline-block;
     white-space: nowrap; 
     background-color: #F1EEDC;
