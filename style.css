@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: "Chenla";
+    font-family: "Kantum";
     src: url(./KantumruyPro-VariableFont_wght.ttf);
 }
 
@@ -19,12 +19,15 @@ a {
 }
 
 body {
-    background-color: #F1EEDC;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    background: url(./images/background.png)
 }
 
 p {
-    font-family: "Chenla";
-    color: 5F5F5F;
+    font-family: "Kantum";
+    color: #5F5F5F;
 }
 
 footer {
@@ -36,6 +39,10 @@ h1 {
     color: #008DDA;
 }
 
+img {
+    border-radius: 10%;
+}
+
 .navbar-brand {
     color: #008DDA;
 }
@@ -45,17 +52,30 @@ h1 {
 }
 
 .banner {
-    height: 80vh;
-    padding: 50px 150px 0px 0px;
+    height: 100vh;
 }
 
 .banner h1 {
     font-size: 4em;
+    padding: 50px 150px 0px 0px;
 }
 
 .viewProjects {
-    position: relative;
-    margin-left: 5px;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.clipart {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.clipart img {
+    height: 340px;
+    width: 400px;
+    position: absolute;
 }
 
 .circle {
@@ -63,7 +83,7 @@ h1 {
     height: 80px;
     width: 80px;
     border: 5px solid #FF8080;
-    border-radius: 50%; /* Correct to 50% for full circle */
+    border-radius: 50%;
     margin-top: 30px;
     margin-left: 20px;
     display: flex;
@@ -89,21 +109,15 @@ h1 {
     justify-content: center;
     height: 100%;
     width: 100%;
-    transform: rotate(-20deg); 
+    transform: rotate(-20deg);
     transition: all 0.3s ease;
 }
 
 .button-wrapper a {
-    color: #5F5F5F; 
+    color: #5F5F5F;
     display: inline-block;
-    white-space: nowrap; 
+    white-space: nowrap;
     background-color: #F1EEDC;
-}
-
-.about {
-    display: flex;
-    height: 80vh;
-    align-items: center;
 }
 
 .about-img {
@@ -113,7 +127,6 @@ h1 {
 }
 
 .about-img img {
-    border-radius: 10%;
     height: 400px;
     width: 280px;
 }
@@ -127,14 +140,15 @@ h1 {
 }
 
 .icons i {
-    font-size: 40px; 
-    margin: 0 5px; 
-    cursor: pointer; 
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
     color: #007bff;
 }
 
 .icons i:hover {
-    color: #5F5F5F; /* Change color on hover */
+    color: #5F5F5F;
+    /* Change color on hover */
 }
 
 .description p {
@@ -146,12 +160,6 @@ h1 {
     font-family: "Biz";
 }
 
-.projects {
-    height: 80vh;
-    align-content: center;
-}
-
 .contact {
-    height: 80vh;
-    align-content: center;
+    height: 100vh;
 }
