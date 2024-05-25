@@ -16,6 +16,7 @@
 
 a {
     text-decoration: none;
+    color: #000;;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 
 p {
     font-family: "Kantum";
-    color: #5F5F5F;
+    color: #000;
 }
 
 footer {
@@ -39,8 +40,16 @@ h1 {
     color: #008DDA;
 }
 
+h2 {
+    font-size: 1em;
+    font-family: "Kantum";
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 img {
-    border-radius: 10%;
+    border-color: #5F5F5F;
+    border-style: solid;
 }
 
 .navbar-brand {
@@ -60,10 +69,8 @@ img {
     padding: 50px 150px 0px 0px;
 }
 
-.viewProjects {
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
+.banner img {
+    border-style: none;
 }
 
 .clipart {
@@ -122,8 +129,8 @@ img {
 
 .about-img {
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-content: flex-end;
+    justify-content: flex-end;
 }
 
 .about-img img {
@@ -160,6 +167,97 @@ img {
     font-family: "Biz";
 }
 
-.contact {
-    height: 100vh;
+.project-description {
+    align-content: center;
+}
+
+.view-project {
+    color: #FF8080;
+}
+
+.contact-clip {
+    align-content: center;
+}
+
+.contact img {
+    border-style: none;
+    height: 340px;
+    width: 400px;
+}
+
+.contact input,
+select {
+    color: #404040;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #FF8080;
+    box-sizing: border-box;
+    background-color: #F1EEDC;
+}
+
+.contact input[id=message],
+select {
+    height: 150px;
+}
+
+.contact input[type=submit] {
+    width: 40%;
+    background-color: #FF8080;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner h1 {
+        font-size: 2em;
+        padding: 30px 0px 0px;
+    }
+
+    .clipart {
+        width: 100%;
+    }
+    
+    .clipart img {
+        height: 240px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .about-img {
+        display: block;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .about-img img {
+        height: 300px;
+        width: 230px;
+    }
+
+    .description p {
+        display: none;
+    }
+    
+    .contact img {
+        border-style: none;
+        height: 180px;
+        width: 200px;
+        z-index: -1;
+    }
+
+    .contact-clip {
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+    }
+
+    .contact input[type=submit] {
+        width: 50%;
+    }
 }
