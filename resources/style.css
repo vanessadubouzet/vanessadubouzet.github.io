@@ -287,4 +287,15 @@ select {
     .contact input[type=submit] {
         width: 50%;
     }
+
+    .cinnamoroll-gifs {
+        height: 450px;
+        width: 250px;
+        border-style: solid;
+        padding: 0;
+    }
+
+    .game-content .circle {
+        display: none;
+    }
 }
