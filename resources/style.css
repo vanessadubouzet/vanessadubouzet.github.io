@@ -238,6 +238,21 @@ select {
 
 .game-content ol li {
     font-family: "Kantum";
+} 
+
+.img-wireframe {
+    max-height: 30rem;
+    max-width: 13rem;
+}
+
+.img-prototype {
+    max-height: 30rem;
+    max-width: 13rem;
+}
+
+.wireframes {
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
