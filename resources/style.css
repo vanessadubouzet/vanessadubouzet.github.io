@@ -228,9 +228,9 @@ select {
 }
 
 .cinnamoroll-gifs {
-    height: 750px;
-    width: 450px;
-    border-style: solid;
+    height: 35rem;
+    width: 20rem;
+    border-style: none;
 }
 
 .game-content h2 {
@@ -337,4 +337,6 @@ select {
     .game-content .circle {
         display: none;
     }
+
+    
 }
