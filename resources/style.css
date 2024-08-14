@@ -216,6 +216,7 @@ select {
     cursor: pointer;
 }
 
+
 .title img {
     border-style: none;
 }
@@ -241,18 +242,41 @@ select {
 } 
 
 .img-wireframe {
-    max-height: 30rem;
+    height: 23rem;
     max-width: 13rem;
 }
 
 .img-prototype {
-    max-height: 30rem;
+    height: 23rem;
     max-width: 13rem;
 }
 
-.wireframes {
-    display: flex;
-    justify-content: center;
+.wireframes img {
+    border-style: none;
+}
+
+.design-rationale h2 {
+    color: #008DDA;
+    font-family: "Biz";
+    text-transform: none;
+    font-size: 2rem;
+}
+
+.user-persona {
+    border: none;
+    height: 30rem;
+    width: 43rem;
+}
+
+.user-scenario {
+    border: none;
+    height: 30rem;
+    width: 60rem;
+}
+
+.to-top {
+    text-align: center;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
