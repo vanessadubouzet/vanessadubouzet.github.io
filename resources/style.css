@@ -270,13 +270,31 @@ select {
 
 .user-scenario {
     border: none;
-    height: 30rem;
+    height: 24rem;
     width: 60rem;
+}
+
+
+.yourdrobe-palette {
+    height: 6.5rem;
+    width: 20rem;
+    border: none;
 }
 
 .to-top {
     text-align: center;
     text-decoration: underline;
+}
+
+.flower-hut-img {
+    height: 40rem;
+    width: 20rem;
+    border-style: none;
+}
+
+.tfh-palette {
+    height: 6.5rem;
+    width: 15rem;
 }
 
 @media only screen and (max-width: 600px) {
