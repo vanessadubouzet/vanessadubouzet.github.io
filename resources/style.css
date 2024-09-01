@@ -73,6 +73,11 @@ img {
     border-style: none;
 }
 
+.github-link {
+    text-decoration: underline;
+    color: #FF8080;
+}
+
 .clipart {
     display: flex;
     justify-content: flex-end;
