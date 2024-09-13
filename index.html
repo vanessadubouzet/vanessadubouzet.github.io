@@ -1,193 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vanessa Dubouzet</title>
-    <link rel="icon" type="image/png" href="./images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./resources/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container pt-5">
-            <a class="navbar-brand" href="./index.html"> Vanessa Dubouzet </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="nav navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html#about-me">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html#contact">Contact</a>
-                    </li>
+  <body>
+    <div class="container">
+        <div class="title">
+            <h1 class="heading"> Vanessa <br> Dubouzet </h1>
+        </div>
+        <div class="nav-container">
+            <nav> 
+                <ul class="nav">
+                    <li> <a href="./about.html"> about </a> </li>
+                    <li> <a href="./projects.html"> projects </a> </li>
+                    <li> <a href="#contactForm" data-bs-toggle="modal" data-target="#contactForm"> contact </a> </li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </nav>
+        <div class="p-container">
+            <p class="home-description"> Passionate about design, I blend my skills as a <span class="font-blue"> developer and designer </span>to create beautiful experiences. </p>
+        </div>
+    </div>
 
-    <div class="container banner">
-        <div class="row">
-            <div class="col-sm-1 col-md-12">
-                <h1> Passionate about design, <br> I blend my skills as a <span style="color:#FF8080"> developer and
-                        designer </span> to create beautiful interfaces. </h1>
-                <div class="row clipart">
-                    <img src="./images/girl-laptop.png">
+    <!-- Modal -->
+    <div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="contactFormModal" aria-hidden="true">
+        <div class="modal-dialog d-flex justify-content-center">
+            <div class="modal-content w-5">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="contactFormModal"> Send me a message! </h1>
                 </div>
-                <div class="circle">
-                    <div class="button-wrapper"> <a href="#projects"> View Projects </a></div>
+                <div class="modal-body p-4">
+                    <form  action="https://formsubmit.co/vcdubouzet0408@gmail.com" method="POST" target="_blank">
+                        <!-- Name input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="name4">Name</label>
+                            <input type="text" id="name4" class="form-control" required/>
+                        </div>
+
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="email4">Email address</label>
+                            <input type="email" id="email4" class="form-control" required />
+                        </div>
+
+                        <!-- textarea input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="textarea4">Your message</label>
+                            <textarea id="textarea4" rows="4" class="form-control" required></textarea>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                            class="btn send-btn">Send</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Modal -->
 
-    <div class="container about" id="about-me">
-        <div class="row">
-            <div class="col-sm-1 col-md-7">
-                <h1 class="mb-4"> Hi there! </h1>
-                <p>
-                    I'm Vanessa Dubouzet, a recent graduate in Computer Information Systems with a focus on software
-                    design and development. <br> <br>
-                    As a fresh graduate, I bring a blend of creativity and technical expertise to the table. I'm
-                    passionate about creating engaging digital experiences, particularly in front-end development.
-                    However, I also have experience in backend development, making me a well-rounded developer. <br>
-                    <br>
-                    When I'm not coding, you can find me exploring my neighbourhood, diving into a good book, or
-                    immersing myself in the world of video games.
-                </p>
-                <div class="icons">
-                    <a href="https://github.com/vanessadubouzet" target="_blank"> <i class="bi bi-github"> </i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/vanessa-dubouzet" target="_blank"> <i
-                            class="bi bi-linkedin"> </i> </a>
-                </div>
-            </div>
-            <div class="col-sm-1 col-md-5 mx-auto about-img">
-                <div class="img-container">
-                    <img src="./images/vanessa_portrait.JPG" class="img-fluid" alt="Vanessa's Portrait">
-                    
-                </div>
-                <div class="col-sm-1 col-md-1 description">
-                    <p> Developer and Designer </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container projects" id="projects">
-        <div class="row pt-5">
-            <h1> Design Projects </h1>
-            <p> I'm passionate about creating digital experiences that stand out. I bring ideas to life with
-                creativity
-                and precision. </p>
-        </div>
-        <div class="row pt-5" id="yourDrobe">
-            <div class="col">
-                <img src="./images/cover-yourdrobe.png" class="img-fluid">
-            </div>
-            <div class="col project-description">
-                <div class="row">
-                    <h2> UI/UX Design </h2>
-                    <h1> YourDrobe </h1>
-                    <p> YourDrobe is a mobile app personal closet companion that lets its user manage their clothes, add them to their closet, as well as browser other clothes
-                    </p>
-                    <a href="./your-drobe.html" class="view-project"> VIEW CASE STUDY &rarr; </a>
-                </div>
-            </div>
-        </div>
-        <div class="row pt-5" id="cinnamorollAdventure">
-            <div class="col project-description">
-                <div class="row">
-                    <h2> Game Design and Development </h2>
-                    <h1> Cinnamoroll Adventure </h1>
-                    <p> Cinnamoroll Adventure is a delightful mobile game developed with Swift and SpriteKit. Join
-                        Cinnamoroll on a journey through a whimsical forest maze, evading monsters (cats) to find the
-                        hidden treasure box.
-                    </p>
-                    <a href="./cinnamoroll-adventure.html" class="view-project"> VIEW PROJECT &rarr; </a>
-                </div>
-            </div>
-            <div class="col">
-                <img src="./images/cover-cinadv.png" class="img-fluid">
-            </div>
-        </div>
-        <!-- <div class="row pt-5" id="theFlowerHut">
-            <div class="col">
-                <img src="./images/cover-flowerhut.png" class="img-fluid">
-            </div>
-            <div class="col project-description">
-                <div class="row">
-                    <h2> Website Redesign and Development </h2>
-                    <h1> The Flower Hut </h1>
-                    <p> The Flower Hut is a family-owned and operated flower shop proudly serving the Fort St. John
-                        area. The goal of this project is to modernize the website's design,
-                        improve
-                        user experience, and enhance overall functionality.
-                    </p>
-                    <a href="./the-flower-hut.html" class="view-project"> VIEW CASE STUDY &rarr; </a>
-                </div>
-            </div>
-        </div> -->
-        <div class="row p-5 mb-5 d-flex justify-content-center" id="more-projects"> 
-            <div class="circle">
-                <div class="button-wrapper"> <a href="./resources/Vanessa_Dubouzet_Portfolio.pdf" target="_blank"> More Design Projects </a></div>
-            </div> 
-        </div>
-    </div>
-    
-    <div class="container contact pt-5 pb-5" id="contact">
-        <div class="row pt-5 d-flex">
-            <div class="col-sm-1 col-md-7">
-                <h1> Send me a message! </h1>
-                <form action="https://formsubmit.co/vcdubouzet0408@gmail.com" method="POST" target="_blank">
-                    <span> Name* </span> <br> <input type="text" id="name" name="name" placeholder="Name" required><br>
-                    <span> Email* </span> <br> <input type="email" id="email" name="email" placeholder="Email"
-                        required><br>
-                    <span> Message* </span> <br> <input type="text" id="message" name="message" placeholder="Message" required><br><br>
-                    <input type="submit" value="Send Message">
-                </form>
-            </div>
-            <div class="col-sm-1 col-md-5 contact-clip">
-                <img src="./images/contact.png">
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="container footer pt-5 pb-5" id="footer">
-        <div class="row">
-            <div class="col-sm-1 col-md-6">
-                <a href="#"> <h1> Vanessa Dubouzet </h1> </a>
-                <h2> Developer and Designer </h2>
-                <p> Made with ❤️ </p>
-            </div>
-            <div class="col-sm-1 col-md-3 ">
-                <h1> Find </h1> 
-                <a href="./index.html#about-me"> <h2> About </h2> </a>
-                <a href="./resources/Vanessa_Dubouzet_Resume.pdf" target="_blank"> <h2> My Resume </h2> </a>
-                <a href="./index.html#projects"> <h2> Projects </h2> </a>
-            </div>
-            <div class="col-sm-1 col-md-3">
-                <h1> Social </h1>
-                <a href="https://www.linkedin.com/in/vanessa-dubouzet" target="_blank"> <h2> Linkedin </h2> </a>
-                <a href="https://github.com/vanessadubouzet" target="_blank"> <h2> Github </h2> </a>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
